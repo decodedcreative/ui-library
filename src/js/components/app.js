@@ -20,8 +20,11 @@ class App extends React.Component {
 		console.log(this.state.effects);
 
 		const effects = {...this.state.effects};
-		//const timestamp = Date.now();
-		//effects[`effect-${timestamp}`] = effect;
+		const timestamp = Date.now();
+		effects[`effect-${timestamp}`] = effect;
+
+		console.log(effects);
+
 		// set state
 		//this.setState({ effects });
 	}
